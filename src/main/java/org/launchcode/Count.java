@@ -14,8 +14,10 @@ public class Count {
             } else {
                 int increment = finalMap.get(letter);
                 finalMap.put(letter, increment + 1);
-                System.out.println(finalMap);
             }
+        }
+        for (Character entry : finalMap.keySet()) {
+            System.out.println(entry + " : " + finalMap.get(entry));
         }
     }
 }
